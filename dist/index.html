@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0c0e11"><meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Prévia de site da Batista Veículos, em São João del Rei, com identidade e anúncios dos prints enviados. Compra, venda, troca e financiamento.">
+<title>Batista Veículos | Carros e motos em São João del Rei</title>
+<link rel="icon" href="assets/batista/batista-logo.png"><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="demo-bar">PRÉVIA TEC DEL REI <span>·</span> Anúncios reproduzidos dos prints enviados. Consulte disponibilidade.</div>
+<header class="header"><div class="container nav">
+<a class="brand" href="#inicio" aria-label="Batista Veículos — início"><img src="assets/batista/batista-logo.png" width="86" height="86" alt="Logo original Batista Veículos"></a>
+<nav id="navigation" aria-label="Menu principal"><a href="#veiculos">Carros e motos</a><a href="#instagram">No Instagram</a><a href="#batista">A Batista</a><a href="#contato">Onde estamos</a></nav>
+<a href="tel:+553233734067" class="button header-contact">Falar com a Batista <span>↗</span></a>
+<button id="menu" class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navigation">☰</button>
+</div></header>
+<main>
+<section class="hero" id="inicio"><div class="container hero-grid">
+<div class="hero-copy"><p class="eyebrow"><span></span> BATISTA VEÍCULOS · SÃO JOÃO DEL REI</p>
+<h1>Seu próximo<br>carro. Sua <br><em>próxima história.</em></h1>
+<p class="hero-description">Carros, motos e uma conversa de perto para encontrar o que combina com você.</p>
+<div class="hero-actions"><a class="button" href="#veiculos">Encontre seu veículo <span>↗</span></a><a class="text-link light" href="#instagram">Conheça a Batista <span>↗</span></a></div>
+<div class="hero-services"><span>COMPRA</span><i></i><span>VENDA</span><i></i><span>TROCA</span><i></i><span>FINANCIA</span></div>
+</div>
+<div class="hero-visual" aria-label="Imagens do Instagram da Batista Veículos">
+<div class="red-orbit"></div>
+<div class="portrait-card"><img src="assets/batista/batista-apresentacao.jpg" alt="Representante da Batista em uma publicação do Instagram" width="331" height="440"><div class="portrait-caption"><span class="live-dot"></span> NEGÓCIO É CONVERSA DE PERTO.</div></div>
+<button class="hero-post hero-post-top" data-post="hrv" aria-label="Ver publicação do Honda HR-V"><img src="assets/batista/post-hrv.jpg" alt="Publicação da Batista: Honda HR-V 2025"><span>VISTO NO INSTAGRAM ↗</span></button>
+<button class="hero-post hero-post-bottom" data-post="lander" aria-label="Ver publicação da Yamaha Lander"><img src="assets/batista/post-lander.jpg" alt="Publicação da Batista: Yamaha Lander 2021"><span>CARROS E MOTOS ↗</span></button>
+<div class="hero-watermark">BATISTA</div>
+</div></div></section>
+<div class="container"><form id="searchForm" class="search-panel"><div class="search-field query-field"><label for="query">SEU PRÓXIMO VEÍCULO</label><input type="search" id="query" placeholder="Busque por modelo, marca ou ano" autocomplete="off"></div><div class="search-field"><label for="brand">MARCA</label><select id="brand"><option value="">Todas as marcas</option><option>Chevrolet</option><option>Fiat</option><option>Honda</option><option>Hyundai</option><option>Renault</option><option>Toyota</option><option>Volkswagen</option><option>Yamaha</option></select></div><div class="search-field"><label for="budget">ATÉ QUANTO?</label><select id="budget"><option value="0">Todos os valores</option><option value="25000">Até R$ 25 mil</option><option value="80000">Até R$ 80 mil</option><option value="120000">Até R$ 120 mil</option><option value="160000">Até R$ 160 mil</option></select></div><button class="button search-button" type="submit">Buscar <span>↗</span></button></form></div>
+<section id="veiculos" class="section catalog"><div class="container">
+<div class="section-heading"><div><p class="eyebrow"><span></span> DO INSTAGRAM PARA A SUA GARAGEM</p><h2>Você viu no perfil.<br><span>Encontre aqui.</span></h2><p class="section-description">Carros e motos anunciados pela Batista, reunidos em um só lugar.</p></div><a class="text-link" href="https://www.instagram.com/veiculosbatista/" target="_blank" rel="noopener noreferrer">Ir para o perfil oficial <span>↗</span></a></div>
+<div class="catalog-toolbar"><div class="chips" role="group" aria-label="Filtrar tipo de veículo"><button class="chip active" data-category="Todos">Todos</button><button class="chip" data-category="Carro">Carros</button><button class="chip" data-category="Moto">Motos</button><button class="chip" data-category="Favoritos">♡ Favoritos</button></div><label class="sort-label">Ordenar <select id="sort" aria-label="Ordenar anúncios"><option value="featured">Destaques</option><option value="low">Menor preço publicado</option><option value="high">Maior preço publicado</option><option value="recent">Ano mais recente</option></select></label></div>
+<div class="results-line"><p id="count" role="status" aria-live="polite"></p><button class="reset" id="reset">Limpar filtros</button></div>
+<div class="vehicle-grid" id="cars"></div><div class="load-row"><button class="button secondary" id="loadMore">Ver mais anúncios <span>↓</span></button></div>
+<p class="catalog-note"><strong>Sobre os anúncios:</strong> imagens e informações foram extraídas das publicações mostradas nos prints enviados. Os valores podem ter mudado e os veículos podem já ter sido vendidos. Confirme os detalhes com a loja. As fotos têm a resolução dos prints.</p>
+</div></section>
+<section class="instagram-section section" id="instagram"><div class="container">
+<div class="section-heading"><div><p class="eyebrow"><span></span> O JEITO BATISTA DE ESTAR PERTO</p><h2>Oportunidades, dicas<br>e <span>bastidores da loja.</span></h2><p class="section-description">A conversa começa no Instagram. Acompanhe o que acontece por lá.</p></div><a class="instagram-handle" href="https://www.instagram.com/veiculosbatista/" target="_blank" rel="noopener noreferrer"><img src="assets/batista/batista-logo.png" width="45" height="45" alt=""><div><strong>@veiculosbatista</strong><small>Conheça o perfil oficial ↗</small></div></a></div>
+<div class="instagram-grid">
+<button class="social-card" data-post="dicas"><img src="assets/batista/video-dicas.jpg" alt="Capa do vídeo Máquina quebra, Parte 1, da Batista Veículos" loading="lazy"><div><span>DICAS E BASTIDORES</span><strong>A Batista de perto ↗</strong></div></button>
+<button class="social-card" data-post="hb20"><img src="assets/batista/post-hb20.jpg" alt="Publicação enviada: HB20 sedã 2025" loading="lazy"><div><span>CARROS</span><strong>HB20 sedã 2025 ↗</strong></div></button>
+<button class="social-card" data-post="corolla"><img src="assets/batista/post-corolla.jpg" alt="Publicação enviada: Corolla Cross 2024" loading="lazy"><div><span>CARROS</span><strong>Corolla Cross 2024 ↗</strong></div></button>
+<button class="social-card" data-post="lander"><img src="assets/batista/post-lander.jpg" alt="Publicação enviada: Lander 2021" loading="lazy"><div><span>MOTOS</span><strong>Lander 250 2021 ↗</strong></div></button>
+</div><p class="instagram-note">Imagens das publicações enviadas para esta prévia. Acesse o perfil para assistir aos vídeos e consultar as publicações completas.</p>
+</div></section>
+<section class="section about" id="batista"><div class="container about-grid"><div class="about-visual"><img src="assets/batista/batista-apresentacao.jpg" alt="Batista Veículos em uma imagem do perfil oficial" loading="lazy"><div class="about-badge"><img src="assets/batista/batista-logo.png" width="108" height="108" alt="Batista Veículos"><span>SÃO JOÃO<br>DEL REI · MG</span></div></div><div class="about-copy"><p class="eyebrow"><span></span> BATISTA VEÍCULOS</p><h2>Uma loja da cidade.<br>Uma conversa<br><span>com você.</span></h2><p>Compra, venda, troca e financiamento em São João del Rei. Encontre possibilidades para o seu próximo carro ou a sua próxima moto e converse com a Batista sobre o que você procura.</p><div class="service-list"><div><span>01</span><p>Quer comprar?<small>Encontre o anúncio e fale sobre o veículo.</small></p></div><div><span>02</span><p>Vai trocar?<small>Converse com a loja sobre o seu veículo.</small></p></div><div><span>03</span><p>Pensa em financiar?<small>Consulte as condições diretamente com a equipe.</small></p></div></div><a class="button" href="tel:+553233734067">Fale com a Batista <span>↗</span></a></div></div></section>
+<section class="contact-section" id="contato"><div class="container contact-grid"><div><p class="eyebrow"><span></span> DO ONLINE PARA A LOJA</p><h2>O próximo passo?<br><span>Vamos conversar.</span></h2><p>Confirme as informações do anúncio e combine sua visita com a Batista.</p><div class="contact-actions"><a class="button" href="tel:+553233734067">Ligar para a loja <span>↗</span></a><a class="button ghost" href="https://www.instagram.com/veiculosbatista/" target="_blank" rel="noopener noreferrer">Falar no Instagram <span>↗</span></a></div></div><div class="contact-info"><div><span>TELEFONE</span><a href="tel:+553233734067">(32) 3373-4067</a></div><div><span>ENDEREÇO NA BIO ENVIADA</span><p>Avenida Josué de Queiroz, 1995<br>São João del Rei · MG · 36305-144</p><a class="text-link light" href="https://www.google.com/maps/search/?api=1&amp;query=Avenida+Josue+de+Queiroz+1995+Sao+Joao+del+Rei+MG" target="_blank" rel="noopener noreferrer">Ver localização <span>↗</span></a></div><small>Dados reproduzidos da bio exibida nos prints enviados.</small></div></div></section>
+</main>
+<footer><div class="container footer-row"><a href="#inicio" aria-label="Voltar ao início"><img src="assets/batista/batista-logo.png" width="90" height="90" alt="Batista Veículos"></a><p>Prévia conceitual, sem vínculo oficial com a loja.<br>Identidade e publicações reproduzidas das referências enviadas.</p><p>Design e desenvolvimento<br><strong>Tec Del Rei</strong></p></div></footer>
+<button class="floating" id="floatContact"><span>↗</span> Falar com a Batista</button>
+<dialog id="vehicle" class="vehicle-dialog"><button class="dialog-close" id="close" aria-label="Fechar detalhes">×</button><div id="modalBody"></div></dialog>
+<dialog id="postDialog" class="post-dialog"><button class="dialog-close" id="closePost" aria-label="Fechar publicação">×</button><div id="postBody"></div></dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="app.js"></script>
+</body></html>
