@@ -1,48 +1,26 @@
-# Batista Veículos — prévia com identidade do Instagram
+# Batista Veículos — site para GitHub Pages
 
-Desenvolvida pela Tec Del Rei para apresentação comercial. Não é o site oficial da empresa.
+Pacote com a página e os arquivos diretamente na raiz, preparado pela Tec Del Rei.
 
-## Abrir
+## Corrigir a publicação existente
 
-Abra `dist/index.html` no navegador. Não requer instalação nem build. Os arquivos de imagem estão incluídos. Para testar compartilhamento e área de transferência, sirva a pasta `dist` por HTTP em localhost ou HTTPS.
+1. Extraia este ZIP no seu computador.
+2. Abra o repositório VeiculosBatista no GitHub e clique em Add file → Upload files.
+3. Envie o conteúdo extraído: index.html, styles.css, app.js, a pasta assets e este README.md. Envie os arquivos na raiz do repositório, sem criar uma pasta externa. Inclua .nojekyll se ele estiver visível no seu computador; o layout deste site não depende dele.
+4. Clique em Commit changes na branch main. Se sua branch de publicação tiver outro nome, use essa branch.
+5. Em Settings → Pages, selecione Source: Deploy from a branch; Branch: main; pasta: /(root); clique em Save.
+6. Aguarde a conclusão da publicação em Actions e abra o endereço exibido pelo próprio GitHub Pages. Atualize com Ctrl+F5 se ainda aparecer a versão antiga.
 
-## GitHub Pages
+A raiz deve conter index.html, styles.css, app.js e assets/. A pasta dist da versão anterior pode permanecer no repositório, mas não é usada por esta configuração. Não envie apenas o ZIP fechado.
 
-1. Crie um repositório, por exemplo `batista-veiculos-demo`.
-2. Envie o conteúdo deste pacote, preservando as pastas `dist` e `.github`.
-3. Use a branch `main`.
-4. Em Settings → Pages → Build and deployment, escolha GitHub Actions.
-5. O workflow incluído publica a pasta `dist` quando houver push na branch `main`, ou por execução manual em Actions.
-6. Aguarde a execução e copie o endereço exibido em Settings → Pages.
+Este pacote não exige instalar dependências, compilar arquivos ou adicionar um workflow próprio de GitHub Actions.
 
-Este pacote não cria um repositório nem publica automaticamente no GitHub sem essa configuração.
+## O que foi corrigido
 
-## Implementado
+Na versão anterior, a página principal estava em dist/index.html e dependia de um workflow que publicasse a pasta dist. Quando o Pages publica a raiz do repositório, o README pode ser usado como página inicial na ausência de index.html. Esta versão coloca a página, o CSS, o JavaScript e as imagens na raiz e usa caminhos relativos, inclusive para repositórios publicados em subpastas como /VeiculosBatista/.
 
-- Identidade visual preta, vermelha e branca, com a logo recortada das referências enviadas.
-- Catálogo de 11 anúncios de carros e motos reproduzidos dos prints do Instagram.
-- Busca, filtros por tipo, marca e preço publicado, ordenação, favoritos salvos no próprio navegador e botão para exibir mais anúncios.
-- Detalhes em modal com a imagem do anúncio, mensagem de interesse para copiar e link compartilhável por veículo.
-- Galeria de imagens das publicações, com acesso ao perfil oficial da loja.
-- Telefone clicável, endereço e link de localização.
-- Layout responsivo e menu para celular.
+## Conteúdo da prévia
 
-## Origem e limites das informações
+Logo e imagens recortadas dos prints fornecidos do Instagram da Batista. Catálogo de 11 anúncios, filtros, ordenação, favoritos locais, modais, galeria de publicações, telefone e endereço reproduzidos da bio enviada. Preços e disponibilidade devem ser confirmados com a loja. A galeria é estática e não sincroniza com o Instagram. A resolução das imagens é a dos prints. Não há backend nem painel administrativo.
 
-As imagens e os dados foram extraídos exclusivamente dos prints enviados pelo usuário do perfil `@veiculosbatista`. A resolução das fotos e da logo é limitada à dos prints. As imagens da galeria são estáticas: não existe sincronização automática com o Instagram. As capas de vídeo não reproduzem o vídeo; o botão leva ao perfil oficial.
-
-Os preços aparecem como valores informados nas publicações, sem garantia de estoque, vigência ou disponibilidade atual. Dados que não estavam legíveis ou não constavam das referências foram deixados para consulta com a loja.
-
-O telefone (32) 3373-4067 e o endereço Avenida Josué de Queiroz, 1995, São João del Rei, MG, CEP 36305-144 foram transcritos da bio mostrada nos prints. Não foi atribuído WhatsApp a esse número. Os links de contato abrem a ligação ou o perfil oficial; nenhuma mensagem é enviada automaticamente.
-
-Antes de lançar como site oficial, a loja deve confirmar os dados, a disponibilidade e os valores, autorizar o uso do conteúdo e fornecer os arquivos originais para melhorar a qualidade das imagens.
-
-## Estrutura
-
-- `dist/index.html`: página principal.
-- `dist/styles.css`: estilos e responsividade.
-- `dist/app.js`: catálogo, filtros, favoritos e modais.
-- `dist/assets/batista/`: recortes da logo, dos produtos e das publicações enviadas.
-- `.github/workflows/pages.yml`: publicação no GitHub Pages.
-
-Não há backend, painel administrativo, formulário persistente, integração de estoque ou simulação de crédito neste conceito.
+Prévia conceitual da Tec Del Rei, sem vínculo oficial com a Batista Veículos.
